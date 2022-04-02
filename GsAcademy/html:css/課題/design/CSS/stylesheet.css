@@ -1,0 +1,603 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+
+/* -----------
+    common elements
+-----------  */
+
+
+
+html {
+  font-size: 62.5%;/* 16px × 62.5% = 10px*/
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.6em;
+}
+
+
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1360px;
+  margin: auto;
+}
+
+
+.btn {
+  border-radius:20px;
+  display: block;
+  width:100%;
+  font-size:1.2rem;
+  text-align:center;
+  padding:12px;
+  max-width: 240px;
+}
+
+.btn a {
+  display: block;
+
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.background__color {
+  overflow-x: hidden;
+  background-color: #f4fcff;
+  padding: 20px 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+.text__black {
+  color: #000;
+}
+
+.text__white {
+  color: #fff;
+}
+
+/* -----------
+    common color
+-----------  */
+
+
+.white {
+  background-color: #fff;
+}
+
+.orange {
+  background-color: #F69C2E;
+  color: #fff;
+}
+
+
+span {
+  color: #28A7AE;
+}
+/* -----------
+    header
+-----------  */
+
+/* headerの装飾 */
+.header.change-color {
+  background-color: #fff;
+}
+
+.navi-list.change-navcolor li{
+  color: #000;
+  z-index: 100;
+}
+
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+
+.header-wrapper{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.logo {
+  width:  100%;
+}
+
+.logo img {
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+.navi-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.navi-list li {
+  color: #fff;
+}
+
+
+/* -----------
+    main-visual
+-----------  */
+
+
+#top {
+  height:500px;
+  background-color: #28A7AE;
+}
+
+.main-visual{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+
+.main_img_left {
+  height: 100%;
+  width: 500px;
+}
+
+
+.main__img__catchcopy {
+  margin-bottom: 10px;
+}
+
+
+.main__img__size {
+  height: 100%;
+  text-align: center;
+}
+
+.main__img__size img {
+  max-width: 100%;
+  height: 250px;
+  width /***/:auto;
+  object-fit:cover;
+}
+
+
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.main__img__text {
+  color: #fff;
+  text-align: center;
+  margin: 15px 0;
+  font-size: 2rem;
+}
+
+.action-btn {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+/* ---------------------
+         main__img__right
+* ---------------------- */
+
+
+.main_img_right {
+  position: relative;
+  height: 450px;
+  width: 100%;
+  text-align: center;
+}
+
+.main__img__right img{
+  height: 450px;
+  text-align: center;
+}
+
+/* ---------------------
+         loop__img
+* ---------------------- */
+
+
+.loop__wrap {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+}
+
+.loop__wrap img {
+  width: auto;
+  height: 100%;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.loop__wrap img:first-child {
+  animation: loop 50s -25s linear infinite;
+}
+
+.loop__wrap img:last-child {
+  animation: loop2 50s linear infinite;
+}
+
+
+/* ---------------------
+        introduction
+* ---------------------- */
+
+
+.introduction {
+  position: relative;
+  background-color: #fff;
+  border-radius:4px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 10%);
+}
+
+
+.introduction__card{
+  width: 1280px;
+  height: 600px;
+}
+
+.introduction__card__text {
+  padding: 72px 577px 72px 100px;
+}
+
+
+.heading1 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.heading2 {
+  font-size: 4rem;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.heading3 {
+  line-height: 2;
+}
+
+.introduction__btn {
+  margin-top: 30px;
+}
+
+
+.introduction__card__img{
+  position:absolute;
+  top: 40px;
+  right: -184px;
+  width: 764px;
+  height: 448px;
+}
+
+.inner__container {
+  margin: 10px 0;
+}
+
+.introduction__card__img img{
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+.action-btn {
+  margin: auto;
+}
+
+
+.photo-gallery {
+  height:450px;
+}
+
+
+
+/* ---------------------
+        CaseStudy
+* ---------------------- */
+
+.caseStudy__container {
+  display: flex;
+  border: 3px solid #28ABB3;
+  background-color: #fff;
+  width: 1000px;
+  padding: 53px 40px 53px 40px;
+  border-radius: 10px;
+}
+
+.caseStudy__left {
+  width: 500px;
+  align-items: center;
+}
+
+.caseStudy__right{
+  width: 500px;
+}
+
+.caseStudy__right  img{
+  object-fit: contain;
+}
+
+
+
+/* ---------------------
+        feature
+* ---------------------- */
+
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topic__container{
+  margin: 20px 0 40px 0;
+}
+
+.topic__message {
+  text-align: center;
+  font-size: 5rem;
+  padding: 20px 0;
+}
+
+.under__line__container{
+  margin-top: 20px;
+}
+
+.under__line {
+  width: 6vw;
+  height: 5px;
+  background-color: #28A7AE;
+  margin: 0 auto;
+}
+
+.feature__element {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+
+.feature__img_right {
+  background: #fff url(../images/features1.png) no-repeat right;
+  background-size: contain;
+}
+
+.feature__img__left {
+  background: #fff url(../images/features1.png) no-repeat left;
+  background-size: contain;
+}
+
+
+.feature__text {
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  width: 580px;
+  overflow: visible;
+  border-radius:4px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 10%);
+  padding: 60px;
+  background-color: #fff;
+  position: relative;
+}
+
+
+.feature__heading {
+  position: absolute;
+  top: -35px;
+  height: 120px;
+  font-size: 9rem;
+  color: #28A7AE;
+}
+
+
+
+
+
+.feature__text__right {
+  background-size: contain;
+  height: 300px;
+  width: 580px;
+  overflow: visible;
+  margin-right: 0;
+  margin-left: auto;
+  border-radius:4px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 10%);
+  padding: 60px;
+  background-color: #fff;
+  position: relative;
+}
+
+.feature__heading__right {
+  position: absolute;
+  top: -35px;
+  height: 120px;
+  font-size: 9rem;
+  color: #28A7AE;
+}
+
+/* ---------------------
+        cms container
+* ---------------------- */
+.cms__container {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.cms__box {
+  display: block;
+  width: 100%;
+  margin: 30px;
+}
+
+.cms__img {
+  width: 100%;
+}
+
+.cms__img img{
+  max-width: 100%;
+  height: auto;
+  width /***/:auto;
+}
+
+
+.cms__topic {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.cms__text__detail {
+  line-height: 1.5;
+  color: #C3C3C3;
+}
+
+/* ---------------------
+        access
+* ---------------------- */
+
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 75%; /* 比率を4:3に固定 */
+}
+
+/* Google Mapのiframe */
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------------
+        contact
+* ---------------------- */
+
+.form-wrapper {
+    width: 560px;
+    margin: auto;
+}
+
+.form-inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-title{
+    width: 152px;
+    margin: 0 20px 0  0;
+    padding: 8px 0 0 0;
+    text-align: right;
+    font-weight: bold;
+}
+
+.form-title.check-radio {
+    padding: 0;
+}
+
+.form-item{
+    width: 388px;
+    margin: 0 0 32px;
+}
+
+.form-parts{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: solid 3px #c9c9c9;
+    font-size: 1.6rem;
+}
+
+.form-label{
+    margin: 0 16px 0 0;
+    font-size: 1.4rem;
+}
+
+.form__btn {
+  display: flex;
+  justify-content: center;
+}
+
+input[type*="radio"]{
+    appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    margin: 0 10px 0 0 ;
+    border: solid 1px #a0a0a0;
+    border-radius: 50%;
+    vertical-align: -2px;
+}
+
+input[type*="radio"]:checked{
+    background-color: #a0a0a0;
+}
+
+
+
+
+/* responsive対応について */
+
+@media screen and (max-width: 640px) {
+
+  /*
+  ---------------------------
+   * about
+   *-------------------------/
+
+
+}
+
